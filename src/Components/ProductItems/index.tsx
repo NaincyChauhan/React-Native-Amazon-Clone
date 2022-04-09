@@ -37,8 +37,8 @@ const ProductItem = (props: ProductItemProps) => {
                     <Text>{item.ratings}</Text>
                 </View>
                 <Text style={styles.price}>
-                    from ${item.price}
-                    {item.oldPrice && (<Text style={styles.oldprice}>  ${item.oldPrice}</Text>)}
+                    from ${item.price.toFixed(2)}
+                    {item.oldPrice && (<Text style={styles.oldprice}>  ${item.oldPrice.toFixed(2)}</Text>)}
                 </Text>
             </View>
         </TouchableOpacity>
